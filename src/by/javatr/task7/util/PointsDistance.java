@@ -1,18 +1,11 @@
 package by.javatr.task7.util;
 
-import by.javatr.scanner.EnterTheNumber;
 
-class Point {
-    public static int x1 = EnterTheNumber.enterInt();
-    public static int x2 = EnterTheNumber.enterInt();
-    public static int y1 = EnterTheNumber.enterInt();
-    public static int y2 = EnterTheNumber.enterInt();
-
+public class PointsDistance {
     /**
-     *
      * @return double
      */
-    public static double pointDistance() {
+    public static double pointDistance(int x1, int x2, int y1, int y2) {
         double distanceX = x1 - x2;
         double distanceY = y1 - y2;
         double distance = Math.sqrt(Math.pow(distanceX, 2) + Math.pow(distanceY, 2));
