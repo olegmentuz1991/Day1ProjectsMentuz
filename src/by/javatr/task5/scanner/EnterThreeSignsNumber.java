@@ -5,6 +5,9 @@ import by.javatr.scanner.EnterTheNumber;
 public class EnterThreeSignsNumber {
     private static int number = 0;
 
+    /**
+     * @return int
+     */
     public static int threeSignsNumber() {
         number = 0;
 

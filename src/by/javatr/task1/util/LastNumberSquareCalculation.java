@@ -3,11 +3,11 @@ package by.javatr.task1.util;
 import by.javatr.scanner.EnterTheNumber;
 
 public class LastNumberSquareCalculation{
-
-    public static int caseNumbers(){
-
+    /**
+     * @return int
+     */
+    public static int caseNumbers() {
        int number = EnterTheNumber.enterInt();
-
            switch (number % 10) {
                case 1:
                case 9:
@@ -25,9 +25,5 @@ public class LastNumberSquareCalculation{
                    return 5;
                   default: return 0;
            }
-
-
     }
-
-
 }

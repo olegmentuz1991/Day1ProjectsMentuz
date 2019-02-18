@@ -9,7 +9,6 @@ public class TableFunctionCalculator {
     public static double argument1 = EnterTheNumber.enterDouble();
     public static double argument2 = EnterTheNumber.enterDouble();
     public static double step = EnterTheNumber.enterDouble();
-
     public static void tangensFunctionFormat() {
         String leftAlignFormat = "| %-9s | %-10s |%n";
         NumberFormat numberFormat = DecimalFormat.getNumberInstance();

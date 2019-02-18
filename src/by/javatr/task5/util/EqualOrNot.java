@@ -4,7 +4,6 @@ import by.javatr.task5.scanner.EnterThreeSignsNumber;
 
 public class EqualOrNot {
     private static int sum = 0;
-
     /**
      * @return boolean
      */
@@ -14,7 +13,6 @@ public class EqualOrNot {
 
         return Math.pow(inputNumber, 2) == Math.pow(sum, 3);
     }
-
     /**
      * @param inputNumber int
      */

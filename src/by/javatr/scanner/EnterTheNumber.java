@@ -3,6 +3,9 @@ package by.javatr.scanner;
 import java.util.Scanner;
 
 public class EnterTheNumber {
+    /**
+     * @return int
+     */
     public static int enterInt() {
         Scanner scanner = new Scanner(System.in);
         int number;
@@ -23,7 +26,6 @@ public class EnterTheNumber {
     public static String enterString() {
         Scanner scanner = new Scanner(System.in);
         String string;
-
         while (!scanner.hasNextLine()) {
             scanner.nextLine();
             System.out.println("Введите строку!");

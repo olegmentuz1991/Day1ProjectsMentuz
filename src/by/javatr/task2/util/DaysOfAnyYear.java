@@ -10,6 +10,10 @@ public class DaysOfAnyYear {
     private final static int MONTH_4 = 31;
     private static int month;
     private static int year;
+
+    /**
+     * @return int
+     */
     public static int daysOfAnyYear(){
         while (true) {
             System.out.println("Введите месяц: ");
