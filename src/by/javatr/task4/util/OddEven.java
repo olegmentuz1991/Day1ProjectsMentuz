@@ -1,16 +1,14 @@
 package by.javatr.task4.util;
 
-import by.javatr.scanner.EnterTheNumber;
 
 public class OddEven {
     /**
-     *
      * @return boolean
      */
-    public static boolean twoEvenSuccess() {
+    public static boolean twoEvenSuccess(int [] arguments) {
         int count=0;
 for (int i = 0;i<4;i++){
-    if (EnterTheNumber.enterInt()%2==0) {
+    if (arguments[i]%2==0) {
         count++;
     }
 }

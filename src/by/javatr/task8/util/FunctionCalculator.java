@@ -1,14 +1,13 @@
 package by.javatr.task8.util;
 
-import by.javatr.scanner.EnterTheNumber;
-
 public class FunctionCalculator {
-    public static int functionArgument = EnterTheNumber.enterInt();
     /**
+     *
+     * @param functionArgument
      * @return double
      */
-    public static double functionCalculate() {
-        double result = 0;
+    public static double functionCalculate(int functionArgument) {
+        double result;
         if (functionArgument>=3) {
            result = ((-Math.pow(functionArgument, 2)) + (3*functionArgument) + 9);
         } else {

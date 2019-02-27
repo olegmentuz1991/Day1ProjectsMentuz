@@ -1,26 +1,26 @@
 package by.javatr.task5.util;
 
-import by.javatr.task5.scanner.EnterThreeSignsNumber;
-
 public class EqualOrNot {
     private static int sum = 0;
     /**
+     * @param tsnumber
      * @return boolean
      */
-    public static boolean equals() {
-        int inputNumber = EnterThreeSignsNumber.threeSignsNumber();
-        calculateSum(inputNumber);
+    public static boolean equals(int tsnumber) {
+        int inputNumber = tsnumber;
+        calculateSum(tsnumber);
 
-        return Math.pow(inputNumber, 2) == Math.pow(sum, 3);
+        return Math.pow(tsnumber, 2) == Math.pow(sum, 3);
     }
     /**
-     * @param inputNumber int
+     *
+     * @param tsnumber
      */
-    private static void calculateSum(int inputNumber) {
-        while(inputNumber != 0) {
+    private static void calculateSum(int tsnumber) {
+        while(tsnumber != 0) {
             //Суммирование цифр числа
-            sum += (inputNumber % 10);
-            inputNumber /= 10 ;
+            sum += (tsnumber % 10);
+            tsnumber /= 10 ;
         }
     }
 }

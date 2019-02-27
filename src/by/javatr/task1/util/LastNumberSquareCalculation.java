@@ -4,10 +4,11 @@ import by.javatr.scanner.EnterTheNumber;
 
 public class LastNumberSquareCalculation{
     /**
+     *
+     * @param number
      * @return int
      */
-    public static int caseNumbers() {
-       int number = EnterTheNumber.enterInt();
+    public static int caseNumbers(int number) {
            switch (number % 10) {
                case 1:
                case 9:

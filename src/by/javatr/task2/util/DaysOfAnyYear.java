@@ -8,37 +8,15 @@ public class DaysOfAnyYear {
     private final static int MONTH_2 = 29;
     private final static int MONTH_3 = 30;
     private final static int MONTH_4 = 31;
-    private static int month;
-    private static int year;
 
     /**
+     *
+     * @param month
+     * @param year
      * @return int
      */
-    public static int daysOfAnyYear(){
-        while (true) {
-            System.out.println("Введите месяц: ");
-            int number = EnterTheNumber.enterInt();
-            if (number < 1 || number > 12) {
-
-            } else {
-                month = number;
-                break;
-            }
-        }
-        while (true) {
-            System.out.println("Введите год: ");
-            int number = EnterTheNumber.enterInt();
-
-            if (number < 0) {
-
-            } else {
-                year = number;
-                break;
-
-            }
-        }
-
-        switch (month) {
+    public static int daysOfAnyYear(int month, int year){
+                switch (month) {
             case 1:
             case 3:
             case 5:

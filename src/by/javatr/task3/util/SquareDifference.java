@@ -1,32 +1,34 @@
 package by.javatr.task3.util;
 
-import by.javatr.scanner.EnterTheNumber;
-
-
 public class SquareDifference {
-    public static double squareOfBigSquare = EnterTheNumber.enterInt();
 
     /**
-     * @return double
+     *
+     * @param square
+     * @return
      */
-    public static double squareOfCircle() {
-        double circleSquare = Math.PI*Math.pow(Math.sqrt(squareOfBigSquare)/2, 2);
+    public static double squareOfCircle(int square) {
+        double circleSquare = Math.PI*Math.pow(Math.sqrt(square)/2, 2);
         return circleSquare;
     }
 
     /**
-     * @return double
+     *
+     * @param square
+     * @return
      */
-    public static double squareOfLittleSquare() {
-        double littleSquare = 2*squareOfCircle()/Math.PI;
+    public static double squareOfLittleSquare(int square) {
+        double littleSquare = 2*squareOfCircle(square)/Math.PI;
         return littleSquare;
     }
 
     /**
-     * @return double
+     *
+     * @param square
+     * @return
      */
-    public static double difference() {
-        double dif = squareOfBigSquare/(squareOfLittleSquare());
+    public static double difference(int square) {
+        double dif = square/(squareOfLittleSquare(square));
         return dif;
     }
 }
